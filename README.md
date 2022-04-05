@@ -12,7 +12,4 @@ To use this application,
    in server/application.properites   
 If you have problem, feel free to ask me ^^ 
 
-You can watch the tutorial for this app.
-
-
 
