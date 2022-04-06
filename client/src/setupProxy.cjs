@@ -1,6 +1,5 @@
 import {Server_URL} from './components/Config';
-const { createProxyMiddleware } = require('http-proxy-middleware');
-
+import createProxyMiddleware from 'http-proxy-middleware'
 module.exports = function (app) {
     app.use(
         '/api',
