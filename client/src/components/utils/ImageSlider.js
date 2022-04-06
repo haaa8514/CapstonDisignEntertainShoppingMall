@@ -1,6 +1,6 @@
 import React from 'react'
 import { Carousel } from 'antd';
-
+import {Server_URL} from '../Config';
 function ImageSlider(props) {
     return (
         <div>
@@ -9,7 +9,7 @@ function ImageSlider(props) {
                 {props.images.map((image, index) => (
                     <div key={index}>
                         <img style={{ width: '100%', maxHeight: '150px' }}
-                            src={`http://localhost:5000/${image}`} alt="productImage" />
+                            src={`${Server_URL}/${image}`} alt="productImage" />
                     </div>
                 ))}
             </Carousel>

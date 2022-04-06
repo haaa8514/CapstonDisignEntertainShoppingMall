@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Server_URL} from '../../../Config';
 function UserCardBlock(props) {
 
 
@@ -7,7 +7,7 @@ function UserCardBlock(props) {
     const renderCartImage = (images) => {
         if(images.length > 0) {
             let image = images[0]
-            return `http://localhost:5000/${image}`
+            return `${Server_URL}/${image}`
         }
     }
 
